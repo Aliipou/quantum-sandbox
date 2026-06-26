@@ -18,6 +18,20 @@ changes. For production confidentiality/integrity, the answer is **PQC inside
 AuthGate's crypto provider**, not this. Quantum here is a research curiosity, not
 the foundation of anything.
 
+### QKD is one replaceable provider — PQC is the production answer
+
+Treat transport security as a *provider*, not the foundation. BB84/QKD here is **one
+interchangeable research provider**; the production path is **PQC** (ML-KEM / ML-DSA),
+and it belongs in AuthGate's crypto provider, not here. As of 2026 the industry and
+standards trend is decisively PQC — QKD is limited, costly, and infrastructure-bound.
+So the vision is **not** bet on QKD succeeding: if QKD never pans out, delete the QKD
+provider and nothing of value is lost. This sandbox studies one durable question —
+*is eavesdropping physically detectable?* — independent of which provider wins.
+
+> Deliberately **not** built here: an elaborate empty `providers/pqc/qkd/network/…`
+> tree (that would be vaporware scaffolding), and any home-grown PQC (rolling your own
+> post-quantum crypto is a dangerous overclaim — use a vetted library, in AuthGate).
+
 ## What it shows
 
 BB84: Alice sends qubits in random bases, Bob measures in random bases, they keep
