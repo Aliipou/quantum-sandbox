@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-sandbox"
+version = "0.1.0"
+description = "Independent quantum research sandbox: a pure-Python BB84 QKD simulation (T3, simulation only)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ali Pourrahim" }]
+keywords = ["quantum", "bb84", "qkd", "simulation", "research"]
+dependencies = []
+
+[tool.setuptools]
+packages = ["quantum_sandbox"]
