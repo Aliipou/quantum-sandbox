@@ -59,7 +59,7 @@ def run_bb84(
             sifted_bob.append(bob_bits[i])
 
     if sifted_alice:
-        errors = sum(1 for a, b in zip(sifted_alice, sifted_bob) if a != b)
+        errors = sum(1 for a, b in zip(sifted_alice, sifted_bob, strict=True) if a != b)
         qber = errors / len(sifted_alice)
     else:
         qber = 0.0

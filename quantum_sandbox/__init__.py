@@ -6,8 +6,8 @@ the one quantum property that actually matters for trust: that eavesdropping on 
 unknown quantum state is physically detectable (measurement disturbance).
 """
 
-from .qubit import Qubit, RECTILINEAR, DIAGONAL
 from .bb84 import BB84Result, run_bb84
+from .qubit import DIAGONAL, RECTILINEAR, Qubit
 
 __version__ = "0.1.0"
 

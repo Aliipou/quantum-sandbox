@@ -1,6 +1,6 @@
 import unittest
 
-from quantum_sandbox import RECTILINEAR, DIAGONAL, Qubit, run_bb84
+from quantum_sandbox import DIAGONAL, RECTILINEAR, Qubit, run_bb84
 
 
 class TestQubit(unittest.TestCase):

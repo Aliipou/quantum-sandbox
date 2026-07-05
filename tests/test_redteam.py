@@ -9,7 +9,7 @@ the model can't silently drift.
 import statistics
 import unittest
 
-from quantum_sandbox import Qubit, RECTILINEAR, DIAGONAL, run_bb84
+from quantum_sandbox import DIAGONAL, RECTILINEAR, Qubit, run_bb84
 
 ABORT = 0.11  # standard BB84 abort threshold
 

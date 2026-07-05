@@ -20,12 +20,12 @@ def main() -> None:
     print("=" * 50)
 
     clean = run_bb84(n=2000, eavesdropper=False, seed=1)
-    print(f"\nNo eavesdropper:")
+    print("\nNo eavesdropper:")
     print(f"  sifted key length: {len(clean.sifted_alice)}")
     print(f"  QBER: {clean.qber:.3%}   keys match: {clean.keys_match}")
 
     tapped = run_bb84(n=2000, eavesdropper=True, seed=1)
-    print(f"\nWith eavesdropper (intercept-resend):")
+    print("\nWith eavesdropper (intercept-resend):")
     print(f"  sifted key length: {len(tapped.sifted_alice)}")
     print(f"  QBER: {tapped.qber:.3%}   keys match: {tapped.keys_match}")
 
