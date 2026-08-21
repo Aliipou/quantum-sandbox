@@ -1,5 +1,7 @@
 # quantum-sandbox
 
+**Live (graph):** [https://ali-quantum-sandbox.vercel.app](https://ali-quantum-sandbox.vercel.app)
+
 An **independent quantum research sandbox** — pure-Python simulation of quantum
 key distribution (BB84), built to study one property in code: that eavesdropping
 on an unknown quantum state is physically **detectable**.
